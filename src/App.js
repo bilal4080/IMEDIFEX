@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Homepage from "./Comp/Header/Homepage";
+// import Login from "./Comp/User Login-Reg/Login";
+// import {BrowserRouter, Routes, Route} from "react-router-dom";
+// import Reg from "./Comp/User Login-Reg/Registeruser";
+// import Page404 from "./Comp/page404/Page404";
+import HeroSection from "./Comp/MainPage/main";
+// import DoctorBooking from "./Comp/Banner/Banner";
+import Banner from "./Comp/Banner/Banner";
+import Doctors from "./Comp/Categories/catg";
+import ReviewSection from "./Comp/Reviews/review";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            {/* <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                    <Route path="/Reg" element={<Reg />} />
+                    <Route path="*" element={<Page404 />} />
+                    <Route path="/Homepage" element={<Homepage />} />
+                </Routes>
+                <CollectionScreen />
+                <Products />
+            </BrowserRouter> */}
+            <Homepage />
+            <HeroSection />
+            <Banner />
+            <Doctors />
+            <ReviewSection />
+        </div>
+    );
 }
 
 export default App;
